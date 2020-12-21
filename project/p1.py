@@ -26,9 +26,6 @@ def letter_catalog(items,letter='A'):
         continue
   return new_list       
  
-# Cek output kode anda    
-letter_catalog(['Apple','Avocado','Banana','Blackberries','Blueberries','Cherries'],letter='A')
-
 
 #Graded
 
@@ -38,10 +35,6 @@ def counter_item(items):
   result = dict((i,items.count(i)) for i in set(items))
   return result
     
-# Cek output kode anda
-counter_item(['Apple','Apple','Apple','Blueberries','Blueberries','Blueberries'])
-
-
 #Graded
 
 # dua variable berikut jangan diubah
@@ -62,9 +55,6 @@ def total_price(dcounter,fprice):
   total = (sum(total_per_item.values()))
   return total
   
-# Cek output kode anda
-total_price(counter_item(chart),fruit_price)
-
 
 #Graded
 
@@ -77,9 +67,6 @@ def discounted_price(total,discount,minprice=100):
     bayar = total
   return bayar  
         
-# Cek output kode anda
-discounted_price(total_price(counter_item(chart),fruit_price),10,minprice=100)
-
 
 #Graded
 
@@ -98,7 +85,3 @@ def print_summary(items,fprice):
   print("total :", total)  
   print("discount price :", bayar)  
      
-# Cek output kode anda
-print_summary(chart,fruit_price)  
-     
-  
